@@ -1,0 +1,300 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Lora&family=Merriweather:wght@300&family=Montserrat:wght@700&family=Poppins:ital,wght@0,300;1,400&family=Preahvihear&family=Raleway&family=Roboto&family=Ubuntu:wght@300&display=swap');
+/*GENERAL STYLES*/
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Roboto','sans-serif';
+}
+li
+{
+    list-style: none;
+}
+img 
+{
+    display: block;
+}
+/* body
+{
+    overflow-x: hidden;
+
+} */
+
+
+
+/*Header*/
+
+header
+{
+    position: fixed;
+    width: 100%;
+    height: 11vh;
+    background: linear-gradient(to top,transparent,#000);
+    z-index: 10;
+    top: 0;
+}
+nav > ul
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul .nav-left
+{
+    display: flex;
+    width: 20%;
+    justify-content: space-around;
+    align-items: center;
+    padding: .8rem;
+}
+nav ul .nav-right
+{
+    display: flex;
+    align-items: center;
+    width: 25%;
+    justify-content: space-around;
+    padding: .8rem;
+
+}
+.nav-items
+{
+    color: white;
+}
+.logo
+{
+    
+    font-size: 2.5rem;
+    color: red;
+    font-weight: 700;
+}
+.browse
+{
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.nav-right i
+{
+    font-size: 1.3rem;
+}
+.nav-right button
+{
+    background: transparent;
+    color: white;
+    border: none;
+    font-size: 1.4rem;
+   font-weight: bold;
+}
+.drop-down
+{
+    position: relative;
+}
+.dropdown-menu
+{
+    top: 1.8rem;
+    width: 16rem;
+    position: absolute;
+    background-color: rgba(0, 0, 0,0.7);
+    left: -1.9rem;
+    transition: 0.5s ease-in;
+    padding: 1rem 1rem;
+    border-top: 5px solid white;
+    border-radius: 5px 5px 0 0;
+    display: none;
+}
+
+.dropdown-menu ul
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .7rem;
+}
+.dropdown-menu ul li
+{
+    width: 100%;
+    font-size: 1.1rem;
+    text-align: center;
+    padding: .5rem 0;
+}
+.dropdown-menu ul li:hover
+{
+    
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.toggle
+{
+    display: block;
+}
+
+
+/*-----Hero Section-------*/
+
+.container
+{
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    background-color: black;
+}
+.container video
+{
+    position: relative;
+    object-fit: cover;
+    width: 100%;
+    height:100%;
+}
+.container button
+{
+    position: absolute;
+    top: 75%;
+    background: red;
+    width: 9.2rem;
+    padding: .6rem 1rem;
+    font-size: 1.2rem;
+    border-radius: .5rem;
+    border: none;
+    font-weight: 500;
+}
+.container button i
+{
+    margin-left: .5rem;
+    color: black;
+}
+.container .play-now
+{
+    background: #ded5d5;
+    left: 6%;
+}
+.container .more-info
+{
+    background: rgb(92, 89, 89);
+    left: 20%;
+    color: white;
+}
+
+/*--Movie-container--*/
+.movie-container
+{
+    height:70vh ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+    background: black;
+}
+
+/*--Trending--*/
+.trending
+{
+    padding: .5rem;
+    margin-top: 1rem;
+}
+.trending h1
+{
+    color: white;
+    font-family: 'Roboto','sans-serif';
+    letter-spacing: 2px;
+    margin-bottom: 1.2rem;
+}
+  
+
+
+.korean
+{
+    padding: .5rem;
+}
+
+.korean h1
+{
+    color: white;
+    font-family: 'Roboto','sans-serif';
+    letter-spacing: 2px;
+    margin-bottom: 1.2rem;
+}
+.movies
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+.movie
+{
+    width: calc(100%/7)
+}
+.movie img
+{
+    width: 100%;
+    object-fit: cover;
+}
+
+.bottom
+{
+    height: 40vh ;
+    background-color: black;
+}
+
+/*--Divider--*/
+
+.divider
+{
+    height: .7rem;
+    width: 100%;
+    background-color: rgb(35,35,35);
+    position: absolute;
+    top: 145%;
+}
+
+/*---Footer--*/
+
+footer
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60vh;
+    background-color: black;
+    padding-top:3rem ;
+}
+footer .sub a
+{
+    color: #fff;
+
+}
+footer .sub
+{
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+}
+footer .sub button
+{
+    color: #fff;
+    border: 1px solid white;
+    padding: .5rem;
+    background: transparent;
+    font-size: 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+footer .sub .footer-logo
+{
+    color: rgb(182, 173, 173);
+    margin-top: .3rem;
+    cursor: pointer;
+}
+footer .sub:nth-child(1)
+{
+    margin-top: 5rem;
+}
+
+
+
